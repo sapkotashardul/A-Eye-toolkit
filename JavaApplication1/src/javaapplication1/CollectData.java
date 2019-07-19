@@ -183,19 +183,21 @@ public class CollectData extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Thread webcam = new Thread() {
-            public void run() {
+        
             
             //CvCapture capture = opencv_highgui.cvCreateCameraCapture(0);
 
-            if(jComboBox1.getSelectedItem().equals("From WebCam"))
-            {
-                capture = opencv_highgui.cvCreateCameraCapture(0);
-            }
-            else
-            {
-                capture = opencv_highgui.cvCreateCameraCapture(1);
-            }
+        if(jComboBox1.getSelectedItem().equals("From WebCam"))
+        {
+            capture = opencv_highgui.cvCreateCameraCapture(0);
+        }
+        else
+        {
+            capture = opencv_highgui.cvCreateCameraCapture(1);
+        }
+        
+        Thread webcam = new Thread() {
+        public void run() {
             opencv_highgui.cvSetCaptureProperty(capture, opencv_highgui.CV_CAP_PROP_FRAME_WIDTH, 720);
             opencv_highgui.cvSetCaptureProperty(capture, opencv_highgui.CV_CAP_PROP_FRAME_HEIGHT, 1280);
 
