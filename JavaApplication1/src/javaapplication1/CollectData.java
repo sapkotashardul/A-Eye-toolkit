@@ -39,13 +39,13 @@ public class CollectData extends javax.swing.JFrame {
     private volatile boolean runnable = true;
     private String File_path;
     
-    public class InterpreterExample  
+    public class InterpreterPy  
     {  
 
        PythonInterpreter interpreter = null;  
 
 
-       public InterpreterExample()  
+       public InterpreterPy()  
        {  
           PythonInterpreter.initialize(System.getProperties(),  
                                        System.getProperties(), new String[0]);
@@ -78,7 +78,7 @@ public class CollectData extends javax.swing.JFrame {
 
                 IplImage image = opencv_highgui.cvQueryFrame(capture);
                 //CanvasFrame frame = new CanvasFrame("Webcam");
-                InterpreterExample ie = new InterpreterExample();
+                InterpreterPy ie = new InterpreterPy();
                 ie.execfile("test_run.py");  
                 PyInstance testRun = ie.createClass("TestRun", "None");
                 
@@ -431,7 +431,7 @@ public class CollectData extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        InterpreterExample ie = new InterpreterExample();  
+        InterpreterPy ie = new InterpreterPy();  
 
         ie.execfile("hello.py");  
 
@@ -503,7 +503,7 @@ public class CollectData extends javax.swing.JFrame {
         }
         else capture = opencv_highgui.cvCreateCameraCapture(0);
         
-        /*InterpreterExample ie = new InterpreterExample();
+        /*InterpreterPy ie = new InterpreterPy();
         ie.execfile("test_run.py");  
         PyInstance testRun = ie.createClass("TestRun", "None");
         PyObject classification = testRun.invoke("return_classification", new PyString("test"));
