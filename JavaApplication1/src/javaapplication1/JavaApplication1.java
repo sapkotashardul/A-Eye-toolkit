@@ -206,6 +206,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
             case "Linux" :
         }*/
         userdir = System.getProperty("user.dir");
+        System.out.println(userdir);
         //System.out.println(jPanel13.getWidth());
         //System.out.println(jPanel5.getHeight()+jPanel13.getHeight()+jTabbedPane1.getHeight()+20);
         
@@ -240,23 +241,23 @@ public class JavaApplication1 extends javax.swing.JFrame {
         //jLabel12.setIcon(new ImageIcon(ImageIO.read(new File("C:\\Users\\Jules\\Desktop\\A-eye-logger\\src\\a_eye\\img\\Logo@2x.png"))));
         //add action listener to the tabs
         jTabbedPane1.addChangeListener(new ChangeListener() {
-                    public void stateChanged(ChangeEvent e) {
-                        if(webcam != null) webcam.stop();
-                        if (capture != null) opencv_highgui.cvReleaseCapture(capture);
-                        try {
-                            if (recorder != null) {
-                                recorder.stop();
-                                jButton5.setText("START");
-                            }
-                            if (grabberVid != null) grabberVid.stop();
-                            if (grabberCam != null) grabberCam.stop();
-                        } catch (FrameRecorder.Exception ex) {
-                            Logger.getLogger(JavaApplication1.class.getName()).log(Level.SEVERE, null, ex);  
-                        } catch (FrameGrabber.Exception ex) {
-                            Logger.getLogger(JavaApplication1.class.getName()).log(Level.SEVERE, null, ex);
-                        }
+            public void stateChanged(ChangeEvent e) {
+                if(webcam != null) webcam.stop();
+                if (capture != null) opencv_highgui.cvReleaseCapture(capture);
+                try {
+                    if (recorder != null) {
+                        recorder.stop();
+                        jButton5.setText("START");
                     }
-                });
+                    if (grabberVid != null) grabberVid.stop();
+                    if (grabberCam != null) grabberCam.stop();
+                } catch (FrameRecorder.Exception ex) {
+                    Logger.getLogger(JavaApplication1.class.getName()).log(Level.SEVERE, null, ex);  
+                } catch (FrameGrabber.Exception ex) {
+                    Logger.getLogger(JavaApplication1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        });
     }
     
     public static boolean openWebpage(URI uri) {
@@ -639,7 +640,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 712, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Train model", jPanel8);
@@ -654,7 +655,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
+            .addGap(0, 712, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Real time classification", jPanel3);
@@ -669,7 +670,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jButton12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jules\\Desktop\\A-Eye-toolkit\\JavaApplication1\\img\\copy-clipboard.png")); // NOI18N
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication1/copy-clipboard.png"))); // NOI18N
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -737,7 +738,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(184, 184, 184)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(314, Short.MAX_VALUE))
+                .addContainerGap(399, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Data visualization", jPanel10);
@@ -816,7 +817,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jules\\Desktop\\A-Eye-toolkit\\JavaApplication1\\img\\redCircle.png")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication1/redCircle.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -864,14 +865,15 @@ public class JavaApplication1 extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(126, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Video recorder", jPanel9);
 
         jPanel13.setBackground(new java.awt.Color(54, 58, 64));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jules\\Desktop\\A-Eye-toolkit\\JavaApplication1\\logo.png")); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication1/logo.png"))); // NOI18N
+        jLabel12.setPreferredSize(new java.awt.Dimension(77, 76));
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -879,18 +881,19 @@ public class JavaApplication1 extends javax.swing.JFrame {
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(59, 59, 59)
-                .addComponent(jLabel12)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jLabel12)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        frameGrab.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jules\\Desktop\\toolbar2.png")); // NOI18N
+        frameGrab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication1/toolbar2.png"))); // NOI18N
+        frameGrab.setPreferredSize(new java.awt.Dimension(0, 0));
         frameGrab.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 frameGrabMouseDragged(evt);
@@ -910,7 +913,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(frameGrab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(frameGrab, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
