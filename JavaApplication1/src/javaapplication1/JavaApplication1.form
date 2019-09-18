@@ -96,7 +96,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="25" max="32767" attributes="0"/>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
                       <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
@@ -108,7 +108,7 @@
                       <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jPanel14" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -128,9 +128,9 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jPanel4" pref="400" max="32767" attributes="1"/>
+                      <Component id="jPanel4" pref="410" max="32767" attributes="1"/>
                       <Component id="jPanel2" max="32767" attributes="1"/>
-                      <Component id="jSeparator1" alignment="0" pref="400" max="32767" attributes="0"/>
+                      <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -263,17 +263,11 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel24">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="11" style="0"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="The &apos;Camera&apos; option accesses USB port 1."/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel25">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="11" style="0"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="The &apos;Webcam&apos; option accesses to the default webcam of your computer."/>
               </Properties>
             </Component>
@@ -500,9 +494,9 @@
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="3">
-                            <StringItem index="0" value="Screen"/>
-                            <StringItem index="1" value="No screen"/>
-                            <StringItem index="2" value="Unknown"/>
+                            <StringItem index="0" value="Unknown"/>
+                            <StringItem index="1" value="Screen"/>
+                            <StringItem index="2" value="No screen"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -568,9 +562,9 @@
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="3">
-                            <StringItem index="0" value="Low CL"/>
-                            <StringItem index="1" value="High CL"/>
-                            <StringItem index="2" value="Unknown"/>
+                            <StringItem index="0" value="Unknown"/>
+                            <StringItem index="1" value="Low CL"/>
+                            <StringItem index="2" value="High CL"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -638,8 +632,8 @@
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="2">
-                            <StringItem index="0" value="WebCam"/>
-                            <StringItem index="1" value="Camera"/>
+                            <StringItem index="0" value="WebCam (0)"/>
+                            <StringItem index="1" value="Camera (1)"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -839,9 +833,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel27">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="11" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="(Be aware that the playback speed might not match the real speed)."/>
                   </Properties>
                 </Component>
@@ -1027,17 +1018,11 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel34">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="11" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="This operation requires a significant processing power, so closing all or some"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel35">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="11" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="applications is recommended."/>
                   </Properties>
                 </Component>
@@ -1169,7 +1154,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="30" max="32767" attributes="0"/>
+                      <EmptySpace pref="27" max="32767" attributes="0"/>
                       <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jSeparator7" min="-2" pref="10" max="-2" attributes="0"/>
@@ -1181,7 +1166,7 @@
                       <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jPanel15" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1351,25 +1336,16 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel30">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="11" style="0"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="The &apos;Webcam&apos; option accesses to the default webcam of your computer."/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel31">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="11" style="0"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="The &apos;Camera&apos; option accesses USB port 1."/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel32">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="11" style="0"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="The &apos;File&apos; option allows you to select a video file from your computer."/>
               </Properties>
             </Component>

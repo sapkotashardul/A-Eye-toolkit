@@ -428,9 +428,9 @@ public class JavaApplication1 extends javax.swing.JFrame {
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jSeparator1)
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -446,10 +446,8 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jLabel23.setText("functioning of your camera.");
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel24.setText("The 'Camera' option accesses USB port 1.");
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel25.setText("The 'Webcam' option accesses to the default webcam of your computer.");
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
@@ -473,7 +471,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel18Layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
+                .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(jLabel22)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel23)
@@ -485,7 +483,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
                 .addComponent(jLabel24)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Test hardware", jPanel18);
@@ -536,7 +534,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)), "Scene", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.TOP));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Screen", "No screen", "Unknown" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unknown", "Screen", "No screen" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
@@ -570,7 +568,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true), "Cognitive load", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.TOP));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Low CL", "High CL", "Unknown" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unknown", "Low CL", "High CL" }));
 
         jLabel2.setText("Select the cognitive load during the data collection.");
 
@@ -601,7 +599,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jLabel16.setText("Select the camera source.");
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "WebCam", "Camera" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "WebCam (0)", "Camera (1)" }));
         jComboBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox4ActionPerformed(evt);
@@ -730,7 +728,6 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jLabel26.setText("Play the data stored in HDF5 format as a video. ");
 
-        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel27.setText("(Be aware that the playback speed might not match the real speed).");
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
@@ -834,10 +831,8 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jLabel33.setText("load and screen/no screen.");
 
-        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel34.setText("This operation requires a significant processing power, so closing all or some");
 
-        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel35.setText("applications is recommended.");
 
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
@@ -1083,13 +1078,10 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jLabel28.setText("Select the video source and click the 'Start' button to record a video (mp4)");
 
-        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel30.setText("The 'Webcam' option accesses to the default webcam of your computer.");
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel31.setText("The 'Camera' option accesses USB port 1.");
 
-        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabel32.setText("The 'File' option allows you to select a video file from your computer.");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -1111,7 +1103,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
+                .addContainerGap(27, Short.MAX_VALUE)
                 .addComponent(jLabel28)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1123,7 +1115,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
                 .addComponent(jLabel32)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Video recorder", jPanel9);
@@ -1301,10 +1293,12 @@ public class JavaApplication1 extends javax.swing.JFrame {
             classifyFolder_path = "";
             classifyFile_path="";
         }
-        if (classifyFile_path.length() <= 41) {
-            jLabel6.setText(classifyFile_path);
+        if (!classifyFile_path.equals("")){
+            if ((classifyFile_path.length() <= 41)) {
+                jLabel6.setText(classifyFile_path);
+            }
+            else jLabel6.setText(file);
         }
-        else jLabel6.setText(file);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -1317,11 +1311,13 @@ public class JavaApplication1 extends javax.swing.JFrame {
             collectFile_path=chooser.getSelectedFile().getPath();
             file = chooser.getSelectedFile().getName();
         }
-        else collectFile_path = userdir;
-        if (collectFile_path.length() <= 41) {
-            jLabel3.setText(collectFile_path);
-        }
-        else jLabel3.setText(file);
+        else collectFile_path = "";
+        if (!collectFile_path.equals("")){
+            if (collectFile_path.length() <= 58) {
+                jLabel3.setText(collectFile_path);
+            }
+            else jLabel3.setText(file);
+        } else collectFile_path = userdir;
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -1488,10 +1484,12 @@ public class JavaApplication1 extends javax.swing.JFrame {
             file = chooser.getSelectedFile().getName();
         }
         else visualizeFile_path="";
-        if (visualizeFile_path.length() <= 58) {
-            jLabel7.setText(visualizeFile_path);
+        if (!visualizeFile_path.equals("")){
+            if (visualizeFile_path.length() <= 58) {
+                jLabel7.setText(visualizeFile_path);
+            }
+            else jLabel7.setText(file);
         }
-        else jLabel7.setText(file);
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -1539,10 +1537,12 @@ public class JavaApplication1 extends javax.swing.JFrame {
             file = chooser.getSelectedFile().getName();
         }
         else resultsFile_path="";
-        if (resultsFile_path.length() <= 58) {
-            jLabel21.setText(resultsFile_path);
+        if (!resultsFile_path.equals("")){
+            if (resultsFile_path.length() <= 58) {
+                jLabel21.setText(resultsFile_path);
+            }
+            else jLabel21.setText(file);
         }
-        else jLabel21.setText(file);
     }//GEN-LAST:event_jButton15ActionPerformed
     
     /**
