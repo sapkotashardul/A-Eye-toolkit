@@ -352,7 +352,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.ABOVE_TOP, new java.awt.Font("Tahoma", 0, 14))); // NOI18N
 
-        jButton6.setText("Start collecting");
+        jButton6.setText("Record Data");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -361,7 +361,7 @@ public class JavaApplication1 extends javax.swing.JFrame {
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true), "File directory", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.TOP));
 
-        jLabel3.setText("Select the directory in your computer");
+        jLabel3.setText("Select a folder to store the recorded data file.");
 
         jButton9.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jButton9.setText("...");
@@ -760,8 +760,10 @@ public class JavaApplication1 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jCheckBox1.setSelected(true);
         jCheckBox1.setText("Cognitive load");
 
+        jCheckBox2.setSelected(true);
         jCheckBox2.setText("Screen");
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
@@ -895,6 +897,8 @@ public class JavaApplication1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String sc = "1";
+        String cl = "1";
         if (jButton1.getText().equals("Start classification")) {
             jTextArea2.setText("");
 
@@ -902,6 +906,12 @@ public class JavaApplication1 extends javax.swing.JFrame {
                     + "Select the directory containing the h5 files.");
             if (resultsFile_path == null) resultsFile_path = userdir;
 
+            if (jCheckBox1.isSelected()) sc = "1";
+            else sc = "0";
+            
+            if (jCheckBox2.isSelected()) cl = "1";
+            else cl = "0";
+            
             String [] command = {"py","-3.6", "-W", "ignore", "-u",
                 userdir + "\\scriptpy\\classify.py",
                 "--filepath",
@@ -909,7 +919,11 @@ public class JavaApplication1 extends javax.swing.JFrame {
                 "--folderpath",
                 classifyFolder_path,
                 "--resultspath",
-                resultsFile_path 
+                resultsFile_path,
+                "--screen_classify",
+                sc,
+                "--cogload_classify",
+                cl
             };
             classifThread = new Thread() {
                 @Override

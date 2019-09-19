@@ -388,7 +388,7 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="jButton6">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Start collecting"/>
+                    <Property name="text" type="java.lang.String" value="Record Data"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
@@ -437,7 +437,7 @@
                   <SubComponents>
                     <Component class="javax.swing.JLabel" name="jLabel3">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Select the directory in your computer"/>
+                        <Property name="text" type="java.lang.String" value="Select a folder to store the recorded data file."/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JButton" name="jButton9">
@@ -1119,11 +1119,13 @@
                 </Container>
                 <Component class="javax.swing.JCheckBox" name="jCheckBox1">
                   <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
                     <Property name="text" type="java.lang.String" value="Cognitive load"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="jCheckBox2">
                   <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
                     <Property name="text" type="java.lang.String" value="Screen"/>
                   </Properties>
                 </Component>
